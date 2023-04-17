@@ -37,11 +37,12 @@
   ],
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
     "start": "next start",
-    "export": "next export",
     "lint": "eslint --fix \"src/**/*.{js,jsx}\"",
-    "format": "prettier --write \"src/**/*.{js,jsx}\""
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
+    "build": "next build && next export",
+    "postbuild": "next-sitemap",
+    "export": "npm run build && next export && mv build _static"
   },
   "dependencies": {
     "@emotion/cache": "^11.6.0",
