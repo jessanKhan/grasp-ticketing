@@ -1,5 +1,5 @@
 // ** Icon imports
-import Login from 'mdi-material-ui/Login'
+// import Login from 'mdi-material-ui/Login'
 import Table from 'mdi-material-ui/Table'
 import CubeOutline from 'mdi-material-ui/CubeOutline'
 import HomeOutline from 'mdi-material-ui/HomeOutline'
@@ -50,32 +50,32 @@ const navigation = () => {
     {
       title: 'Company Setup',
       icon: FormatLetterCase,
-      path: '/typography'
+      path: '/company-setup'
     },
     {
       title: 'Request Type',
-      path: '/icons',
+      path: '/request-type',
       icon: GoogleCirclesExtended
     },
     {
       title: 'Request Status',
       icon: CreditCardOutline,
-      path: '/cards'
+      path: '/request-status'
     },
     {
       title: 'Priority Setup',
       icon: Table,
-      path: '/tables'
+      path: '/priority-setup'
     },
     {
       icon: AccountCheck,
       title: 'User Access Control',
-      path: '/form-layouts'
+      path: '/user-access-control'
     },
     {
       icon: AccountCheck,
       title: 'User Role Setup',
-      path: '/form-layouts'
+      path: '/user-role-setup'
     },
     {
       sectionTitle: 'Process'
