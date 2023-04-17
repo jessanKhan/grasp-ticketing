@@ -83,66 +83,66 @@ const navigation = () => {
     {
       title: 'Add Request',
       icon: FormatLetterCase,
-      path: '/typography'
+      path: '/add-request'
     },
     {
       title: 'Request List',
-      path: '/icons',
+      path: '#',
       icon: FormatListBulleted
     },
     {
       title: 'Pending List',
       icon: FormatListBulleted,
-      path: '/cards'
+      path: '#'
     },
     {
       title: 'Inprogress List',
       icon: FormatListBulleted,
-      path: '/tables'
+      path: '#'
     },
     {
       icon: FormatListBulleted,
       title: 'Solved List',
-      path: '/form-layouts'
+      path: '#'
     },
     {
       icon: FormatListBulleted,
       title: 'Report',
-      path: '/form-layouts'
+      path: '#'
     },
     {
       icon: ExitToApp,
       title: 'Logout',
-      path: '/form-layouts'
+      path: '#'
     },
-    {
-      sectionTitle: 'User Interface'
-    },
-    {
-      title: 'Typography',
-      icon: FormatLetterCase,
-      path: '/typography'
-    },
-    {
-      title: 'Icons',
-      path: '/icons',
-      icon: GoogleCirclesExtended
-    },
-    {
-      title: 'Cards',
-      icon: CreditCardOutline,
-      path: '/cards'
-    },
-    {
-      title: 'Tables',
-      icon: Table,
-      path: '/tables'
-    },
-    {
-      icon: CubeOutline,
-      title: 'Form Layouts',
-      path: '/form-layouts'
-    }
+    // {
+    //   sectionTitle: 'User Interface'
+    // },
+    // {
+    //   title: 'Typography',
+    //   icon: FormatLetterCase,
+    //   path: '/typography'
+    // },
+    // {
+    //   title: 'Icons',
+    //   path: '/icons',
+    //   icon: GoogleCirclesExtended
+    // },
+    // {
+    //   title: 'Cards',
+    //   icon: CreditCardOutline,
+    //   path: '/cards'
+    // },
+    // {
+    //   title: 'Tables',
+    //   icon: Table,
+    //   path: '/tables'
+    // },
+    // {
+    //   icon: CubeOutline,
+    //   title: 'Form Layouts',
+    //   path: '/form-layouts'
+    // }
   ]
 }
 
