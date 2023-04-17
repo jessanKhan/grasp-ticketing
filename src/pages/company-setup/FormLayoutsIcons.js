@@ -28,6 +28,7 @@ const FormLayoutsIcons = () => {
     // Upload the selected file to the server
     // You can use any library or API for this step
   };
+  
   return (
     <Card>
       <CardHeader title='Company Setup' titleTypographyProps={{ variant: 'h6' }} />
@@ -39,13 +40,7 @@ const FormLayoutsIcons = () => {
                 fullWidth
                 label='Company Name'
                 placeholder='Tesla Motors'
-              // InputProps={{
-              //   startAdornment: (
-              //     <InputAdornment position='start'>
-              //       <AccountOutline />
-              //     </InputAdornment>
-              //   )
-              // }}
+             
               />
             </Grid>
             <Grid item xs={12}>
@@ -53,29 +48,10 @@ const FormLayoutsIcons = () => {
                 fullWidth
                 label='Company Address'
                 placeholder='example address: 27 baker street'
-              // InputProps={{
-              //   startAdornment: (
-              //     <InputAdornment position='start'>
-              //       <AccountOutline />
-              //     </InputAdornment>
-              //   )
-              // }}
+             
               />
             </Grid>
-            {/* <Grid item xs={12}>
-              <TextField
-                fullWidth
-                label='Priority Name'
-                placeholder='Leonard Carter'
-                // InputProps={{
-                //   startAdornment: (
-                //     <InputAdornment position='start'>
-                //       <AccountOutline />
-                //     </InputAdornment>
-                //   )
-                // }}
-              />
-            </Grid> */}
+           
             <Grid item xs={12}>
               <TextField
                 fullWidth
@@ -98,13 +74,7 @@ const FormLayoutsIcons = () => {
                 type='text'
                 label='Status'
                 placeholder='Status'
-              // InputProps={{
-              //   startAdornment: (
-              //     <InputAdornment position='start'>
-              //       <Phone />
-              //     </InputAdornment>
-              //   )
-              // }}
+              
               />
             </Grid>
             <Grid item xs={12}>

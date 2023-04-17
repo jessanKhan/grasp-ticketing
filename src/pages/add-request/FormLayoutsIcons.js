@@ -30,6 +30,7 @@ const FormLayoutsIcons = () => {
     // Upload the selected file to the server
     // You can use any library or API for this step
   };
+  
   return (
     <Card>
       <CardHeader title='Ticket Details' titleTypographyProps={{ variant: 'h6' }} />

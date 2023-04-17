@@ -22,13 +22,7 @@ const FormLayoutsIcons = () => {
                 fullWidth
                 label='Role Name'
                 placeholder='Leonard Carter'
-                // InputProps={{
-                //   startAdornment: (
-                //     <InputAdornment position='start'>
-                //       <AccountOutline />
-                //     </InputAdornment>
-                //   )
-                // }}
+           
               />
             </Grid>
             <Grid item xs={12}>
@@ -37,14 +31,7 @@ const FormLayoutsIcons = () => {
                 type='text'
                 label='Role Description'
                 placeholder='Role description here '
-                // helperText='You can use letters, numbers & periods'
-                // InputProps={{
-                //   startAdornment: (
-                //     <InputAdornment position='start'>
-                //       <EmailOutline />
-                //     </InputAdornment>
-                //   )
-                // }}
+               
               />
             </Grid>
             <Grid item xs={12}>
@@ -53,13 +40,7 @@ const FormLayoutsIcons = () => {
                 type='text'
                 label='Status'
                 placeholder='solved'
-                // InputProps={{
-                //   startAdornment: (
-                //     <InputAdornment position='start'>
-                //       <Phone />
-                //     </InputAdornment>
-                //   )
-                // }}
+                
               />
             </Grid>
             <Grid item xs={12}>
