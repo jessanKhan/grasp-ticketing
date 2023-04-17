@@ -9,6 +9,7 @@ import CreditCardOutline from 'mdi-material-ui/CreditCardOutline'
 import AccountPlusOutline from 'mdi-material-ui/AccountPlusOutline'
 import AlertCircleOutline from 'mdi-material-ui/AlertCircleOutline'
 import GoogleCirclesExtended from 'mdi-material-ui/GoogleCirclesExtended'
+import { AccountCheck,ExitToApp,FormatListBulleted } from 'mdi-material-ui'
 
 const navigation = () => {
   return [
@@ -22,26 +23,97 @@ const navigation = () => {
       icon: AccountCogOutline,
       path: '/account-settings'
     },
+    // {
+    //   sectionTitle: 'Pages'
+    // },
+    // {
+    //   title: 'Login',
+    //   icon: Login,
+    //   path: '/pages/login',
+    //   openInNewTab: true
+    // },
+    // {
+    //   title: 'Register',
+    //   icon: AccountPlusOutline,
+    //   path: '/pages/register',
+    //   openInNewTab: true
+    // },
+    // {
+    //   title: 'Error',
+    //   icon: AlertCircleOutline,
+    //   path: '/pages/error',
+    //   openInNewTab: true
+    // },
     {
-      sectionTitle: 'Pages'
+      sectionTitle: 'Setup Pages'
     },
     {
-      title: 'Login',
-      icon: Login,
-      path: '/pages/login',
-      openInNewTab: true
+      title: 'Company Setup',
+      icon: FormatLetterCase,
+      path: '/typography'
     },
     {
-      title: 'Register',
-      icon: AccountPlusOutline,
-      path: '/pages/register',
-      openInNewTab: true
+      title: 'Request Type',
+      path: '/icons',
+      icon: GoogleCirclesExtended
     },
     {
-      title: 'Error',
-      icon: AlertCircleOutline,
-      path: '/pages/error',
-      openInNewTab: true
+      title: 'Request Status',
+      icon: CreditCardOutline,
+      path: '/cards'
+    },
+    {
+      title: 'Priority Setup',
+      icon: Table,
+      path: '/tables'
+    },
+    {
+      icon: AccountCheck,
+      title: 'User Access Control',
+      path: '/form-layouts'
+    },
+    {
+      icon: AccountCheck,
+      title: 'User Role Setup',
+      path: '/form-layouts'
+    },
+    {
+      sectionTitle: 'Process'
+    },
+    {
+      title: 'Add Request',
+      icon: FormatLetterCase,
+      path: '/typography'
+    },
+    {
+      title: 'Request List',
+      path: '/icons',
+      icon: FormatListBulleted
+    },
+    {
+      title: 'Pending List',
+      icon: FormatListBulleted,
+      path: '/cards'
+    },
+    {
+      title: 'Inprogress List',
+      icon: FormatListBulleted,
+      path: '/tables'
+    },
+    {
+      icon: FormatListBulleted,
+      title: 'Solved List',
+      path: '/form-layouts'
+    },
+    {
+      icon: FormatListBulleted,
+      title: 'Report',
+      path: '/form-layouts'
+    },
+    {
+      icon: ExitToApp,
+      title: 'Logout',
+      path: '/form-layouts'
     },
     {
       sectionTitle: 'User Interface'
