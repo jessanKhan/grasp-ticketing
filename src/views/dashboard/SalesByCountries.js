@@ -17,51 +17,61 @@ const data = [
     sales: '894k',
     trendDir: 'up',
     subtitle: 'USA',
-    title: '$8,656k',
+    title: 'ABC Company',
     avatarText: 'US',
     trendNumber: '25.8%',
     avatarColor: 'success',
-    trend: <ChevronUp sx={{ color: 'success.main', fontWeight: 600 }} />
+    trend: <ChevronUp sx={{ color: 'success.main', fontWeight: 600 }} />,
+    pending:323,
+    solved:2334
   },
   {
     sales: '645k',
     subtitle: 'UK',
     trendDir: 'down',
-    title: '$2,415k',
+    title: 'ABC Company',
     avatarText: 'UK',
     trendNumber: '6.2%',
     avatarColor: 'error',
-    trend: <ChevronDown sx={{ color: 'error.main', fontWeight: 600 }} />
+    trend: <ChevronDown sx={{ color: 'error.main', fontWeight: 600 }} />,
+    pending:323,
+    solved:2334
   },
   {
     sales: '148k',
-    title: '$865k',
+    title: 'ABC Company',
     trendDir: 'up',
     avatarText: 'IN',
     subtitle: 'India',
     trendNumber: '12.4%',
     avatarColor: 'warning',
-    trend: <ChevronUp sx={{ color: 'success.main', fontWeight: 600 }} />
+    trend: <ChevronUp sx={{ color: 'success.main', fontWeight: 600 }} />,
+    pending:323,
+    solved:2334
   },
   {
     sales: '86k',
-    title: '$745k',
+    title: 'ABC Company',
     trendDir: 'down',
     avatarText: 'JA',
     subtitle: 'Japan',
     trendNumber: '11.9%',
     avatarColor: 'secondary',
-    trend: <ChevronDown sx={{ color: 'error.main', fontWeight: 600 }} />
+    trend: <ChevronDown sx={{ color: 'error.main', fontWeight: 600 }} />,
+    pending:323,
+    solved:2334
   },
   {
     sales: '42k',
-    title: '$45k',
+    title: 'ABC Company',
     trendDir: 'up',
     avatarText: 'KO',
     subtitle: 'Korea',
     trendNumber: '16.2%',
     avatarColor: 'error',
-    trend: <ChevronUp sx={{ color: 'success.main', fontWeight: 600 }} />
+    trend: <ChevronUp sx={{ color: 'success.main', fontWeight: 600 }} />,
+    pending:323,
+    solved:2334
   }
 ]
 
@@ -69,7 +79,7 @@ const SalesByCountries = () => {
   return (
     <Card>
       <CardHeader
-        title='Sales by Countries'
+        title='Company wise ticket status (Today)'
         titleTypographyProps={{ sx: { lineHeight: '1.2 !important', letterSpacing: '0.31px !important' } }}
         action={
           <IconButton size='small' aria-label='settings' className='card-more-options' sx={{ color: 'text.secondary' }}>
@@ -113,7 +123,7 @@ const SalesByCountries = () => {
                 <Box sx={{ marginRight: 2, display: 'flex', flexDirection: 'column' }}>
                   <Box sx={{ display: 'flex' }}>
                     <Typography sx={{ mr: 0.5, fontWeight: 600, letterSpacing: '0.25px' }}>{item.title}</Typography>
-                    <Box sx={{ display: 'flex', alignItems: 'center' }}>
+                    {/* <Box sx={{ display: 'flex', alignItems: 'center' }}>
                       {item.trend}
                       <Typography
                         variant='caption'
@@ -125,19 +135,19 @@ const SalesByCountries = () => {
                       >
                         {item.trendNumber}
                       </Typography>
-                    </Box>
+                    </Box> */}
                   </Box>
-                  <Typography variant='caption' sx={{ lineHeight: 1.5 }}>
+                  {/* <Typography variant='caption' sx={{ lineHeight: 1.5 }}>
                     {item.subtitle}
-                  </Typography>
+                  </Typography> */}
                 </Box>
 
                 <Box sx={{ display: 'flex', textAlign: 'end', flexDirection: 'column' }}>
                   <Typography sx={{ fontWeight: 600, fontSize: '0.875rem', lineHeight: 1.72, letterSpacing: '0.22px' }}>
-                    {item.sales}
+                    {item.solved} Solved
                   </Typography>
                   <Typography variant='caption' sx={{ lineHeight: 1.5 }}>
-                    Sales
+                    {item.pending} Pending
                   </Typography>
                 </Box>
               </Box>

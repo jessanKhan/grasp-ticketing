@@ -21,6 +21,7 @@ import StatisticsCard from 'src/views/dashboard/StatisticsCard'
 import WeeklyOverview from 'src/views/dashboard/WeeklyOverview'
 import DepositWithdraw from 'src/views/dashboard/DepositWithdraw'
 import SalesByCountries from 'src/views/dashboard/SalesByCountries'
+import { Typography } from '@mui/material'
 
 const Dashboard = () => {
   return (
@@ -36,27 +37,24 @@ const Dashboard = () => {
           <WeeklyOverview />
         </Grid>
         <Grid item xs={12} md={6} lg={4}>
-          <TotalEarning />
-        </Grid>
-        <Grid item xs={12} md={6} lg={4}>
           <Grid container spacing={6}>
             <Grid item xs={6}>
               <CardStatisticsVerticalComponent
-                stats='$25.6k'
+                stats='25'
                 icon={<Poll />}
                 color='success'
-                trendNumber='+42%'
-                title='Total Profit'
+                trendNumber=''
+                title='Todays Solved'
                 subtitle='Weekly Profit'
               />
             </Grid>
             <Grid item xs={6}>
               <CardStatisticsVerticalComponent
-                stats='$78'
-                title='Refunds'
+                stats='78'
+                title='Todadys Pending'
                 trend='negative'
                 color='secondary'
-                trendNumber='-15%'
+                trendNumber=' '
                 subtitle='Past Month'
                 icon={<CurrencyUsd />}
               />
@@ -65,8 +63,8 @@ const Dashboard = () => {
               <CardStatisticsVerticalComponent
                 stats='862'
                 trend='negative'
-                trendNumber='-18%'
-                title='New Project'
+                trendNumber=''
+                title='Todays Reject'
                 subtitle='Yearly Project'
                 icon={<BriefcaseVariantOutline />}
               />
@@ -76,21 +74,29 @@ const Dashboard = () => {
                 stats='15'
                 color='warning'
                 trend='negative'
-                trendNumber='-18%'
+                trendNumber=' '
                 subtitle='Last Week'
-                title='Sales Queries'
+                title='Todays Inprogress'
                 icon={<HelpCircleOutline />}
               />
             </Grid>
           </Grid>
         </Grid>
         <Grid item xs={12} md={6} lg={4}>
+        <SalesByCountries />
+        </Grid>
+        {/* <Grid item xs={12} md={6} lg={4}>
           <SalesByCountries />
-        </Grid>
-        <Grid item xs={12} md={12} lg={8}>
+        </Grid> */}
+        {/* <Grid item xs={12} md={12} lg={8}>
           <DepositWithdraw />
-        </Grid>
+        </Grid> */}
         <Grid item xs={12}>
+          <Typography fontWeight={"bold"}
+          marginBottom={5}
+          >
+            Tickets By Users
+          </Typography>
           <Table />
         </Grid>
       </Grid>

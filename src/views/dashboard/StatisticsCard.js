@@ -18,26 +18,26 @@ import AccountOutline from 'mdi-material-ui/AccountOutline'
 const salesData = [
   {
     stats: '245k',
-    title: 'Sales',
+    title: 'Solved',
     color: 'primary',
     icon: <TrendingUp sx={{ fontSize: '1.75rem' }} />
   },
   {
     stats: '12.5k',
-    title: 'Customers',
+    title: 'Inprogress',
     color: 'success',
     icon: <AccountOutline sx={{ fontSize: '1.75rem' }} />
   },
   {
-    stats: '1.54k',
+    stats: '54k',
     color: 'warning',
-    title: 'Products',
+    title: 'Queued',
     icon: <CellphoneLink sx={{ fontSize: '1.75rem' }} />
   },
   {
-    stats: '$88k',
+    stats: '88k',
     color: 'info',
-    title: 'Revenue',
+    title: 'Pending',
     icon: <CurrencyUsd sx={{ fontSize: '1.75rem' }} />
   }
 ]

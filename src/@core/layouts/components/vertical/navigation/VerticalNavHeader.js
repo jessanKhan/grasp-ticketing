@@ -6,6 +6,7 @@ import Box from '@mui/material/Box'
 import { styled, useTheme } from '@mui/material/styles'
 import Typography from '@mui/material/Typography'
 
+
 // ** Configs
 import themeConfig from 'src/configs/themeConfig'
 
@@ -47,7 +48,8 @@ const VerticalNavHeader = props => {
       ) : (
         <Link href='/' passHref>
           <StyledLink>
-            <svg
+            <img src='/images/logos/logo.png' alt='logo' height={50} />
+            {/* <svg
               width={30}
               height={25}
               version='1.1'
@@ -105,7 +107,7 @@ const VerticalNavHeader = props => {
                   </g>
                 </g>
               </g>
-            </svg>
+            </svg> */}
             <HeaderTitle variant='h6' sx={{ ml: 3 }}>
               {themeConfig.templateName}
             </HeaderTitle>

@@ -13,84 +13,84 @@ import TableContainer from '@mui/material/TableContainer'
 const rows = [
   {
     age: 27,
-    status: 'current',
-    date: '09/27/2018',
+    status: 'inprogress',
+    date: 'ABC Company',
     name: 'Sally Quinn',
-    salary: '$19586.23',
+    salary: '0168644717117',
     email: 'eebsworth2m@sbwire.com',
     designation: 'Human Resources Assistant'
   },
   {
     age: 61,
-    date: '09/23/2016',
-    salary: '$23896.35',
-    status: 'professional',
+    date: 'ABC Company',
+    salary: '016864471177',
+    status: 'solved',
     name: 'Margaret Bowers',
     email: 'kocrevy0@thetimes.co.uk',
     designation: 'Nuclear Power Engineer'
   },
   {
     age: 59,
-    date: '10/15/2017',
+    date: 'ABC Company',
     name: 'Minnie Roy',
     status: 'rejected',
-    salary: '$18991.67',
+    salary: '016864471717',
     email: 'ediehn6@163.com',
     designation: 'Environmental Specialist'
   },
   {
     age: 30,
-    date: '06/12/2018',
-    status: 'resigned',
-    salary: '$19252.12',
+    date: 'ABC Company',
+    status: 'rejected',
+    salary: '016864471771',
     name: 'Ralph Leonard',
     email: 'dfalloona@ifeng.com',
     designation: 'Sales Representative'
   },
   {
     age: 66,
-    status: 'applied',
-    date: '03/24/2018',
-    salary: '$13076.28',
+    status: 'inprogress',
+    date: 'ABC Company',
+    salary: '016864471771',
     name: 'Annie Martin',
     designation: 'Operator',
     email: 'sganderton2@tuttocitta.it'
   },
   {
     age: 33,
-    date: '08/25/2017',
-    salary: '$10909.52',
+    date: 'ABC Company',
+    salary: '016864471771',
     name: 'Adeline Day',
-    status: 'professional',
+    status: 'solved',
     email: 'hnisius4@gnu.org',
     designation: 'Senior Cost Accountant'
   },
   {
     age: 61,
-    status: 'current',
-    date: '06/01/2017',
-    salary: '$17803.80',
+    status: 'inprogress',
+    date: 'ABC Company',
+    salary: '016864471771',
     name: 'Lora Jackson',
     designation: 'Geologist',
     email: 'ghoneywood5@narod.ru'
   },
   {
     age: 22,
-    date: '12/03/2017',
-    salary: '$12336.17',
+    date: 'ABC Company',
+    salary: '016864471771',
     name: 'Rodney Sharp',
-    status: 'professional',
+    status: 'solved',
     designation: 'Cost Accountant',
     email: 'dcrossman3@google.co.jp'
   }
 ]
 
 const statusObj = {
-  applied: { color: 'info' },
+  queued: { color: 'info' },
   rejected: { color: 'error' },
-  current: { color: 'primary' },
-  resigned: { color: 'warning' },
-  professional: { color: 'success' }
+  inprogress: { color: 'primary' },
+  pending: { color: 'warning' },
+  solved: { color: 'success' }
 }
 
 const DashboardTable = () => {
@@ -102,9 +102,9 @@ const DashboardTable = () => {
             <TableRow>
               <TableCell>Name</TableCell>
               <TableCell>Email</TableCell>
-              <TableCell>Date</TableCell>
-              <TableCell>Salary</TableCell>
-              <TableCell>Age</TableCell>
+              <TableCell>Company Name</TableCell>
+              <TableCell>Phone</TableCell>
+              <TableCell>User ID</TableCell>
               <TableCell>Status</TableCell>
             </TableRow>
           </TableHead>
